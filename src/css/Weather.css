@@ -1,27 +1,43 @@
+
+*{
+  background-color: #51547e; 
+
+}
+
 .weather-dashboard {
   width: 80%;
-  margin: 20px auto;
+  margin: 60px auto;
   text-align: center;
-  background-color: #b8b6b6;
+  background-color: #51547e; 
   padding: 80px;
-  border-radius: 20px;
+  border-radius: 80px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);  
+  color: #e6e1fa;
 }
 
 .city-search input {
   padding: 8px;
   margin-right: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #b185db;
   border-radius: 4px;
   outline: none;
+  background-color: #393b50; 
+  color: #e6e1fa; 
 }
 
 .city-search button {
   padding: 8px 12px;
-  background-color: #78777a;
+  background-color: #d4a5ba; 
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.city-search button:hover {
+  background-color: #ff4ecb; 
+  transform: translateY(-3px);
 }
 
 .current-weather,
@@ -32,6 +48,12 @@
 .forecast-item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #4a4c5e; 
   padding: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.forecast-item:hover {
+  background-color: #34354a; 
+  border-radius: 5px; 
 }
